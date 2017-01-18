@@ -1,0 +1,48 @@
+{
+  "aboutitems": [
+    { 
+      "photoUrl":"assets/img/about/debut.jpg",
+      "titleSmall":"первое",
+      "titleMain":"плавание",
+      "icon":"icon-boat",
+      "textAbout":"<p>Дебют на сцене – февраль 2015 года. <br>  Наш первый спектакль  – лирическая комедия <br> \"Просто лопнула струна\"",
+      "moreInfoUrl":"#/plays/0"  
+    },
+    { 
+      "photoUrl":"assets/img/about/producer.jpg",
+      "titleSmall":"наш",
+      "titleMain":"рулевой",
+      "icon":"icon-rudder",
+      "textAbout":"Вячеслав Волконский – <br>режиссер и актер театра драмы",
+      "moreInfoUrl":"#/producer"  
+    },
+    { 
+      "photoUrl":"assets/img/about/troupe.jpg",
+      "titleSmall":"корабельная",
+      "titleMain":"команда",
+      "icon":"fa fa-users",
+      "textAbout":"Актерский состав Берега – <br> 3 актера и 6 актрис",
+      "moreInfoUrl":"#/troupe"  
+    },
+    { 
+      "photoUrl":"assets/img/about/base.jpg",
+      "titleSmall":"береговой",
+      "titleMain":"причал",
+      "icon":"icon-anchor-port",
+      "textAbout":"Мы выступаем на сцене Телетеатра <br>(Г.Днепр, Рогалева,9)",
+      "moreInfoUrl":"#/contacts"  
+    },
+    { 
+      "photoUrl":"assets/img/about/future.jpg",
+      "titleSmall":"выход в",
+      "titleMain":"море",
+      "icon":"icon-lighthouse",
+      "textAbout":"Мы активно работаем над <br> расширением  репертуара. В скором времени <br> Вас ждут два  премьерных спектакля",
+      "moreInfoUrl":"#/plays"  
+    }
+  ]
+}
+
+
+        
+   

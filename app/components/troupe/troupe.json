@@ -1,0 +1,50 @@
+{
+  "troupe": [
+    {
+      "name":"Евгения Плотникова",
+      "photoUrl":"assets/img/troupe/женя.jpg"
+    },
+    {
+      "name":"Дмитрий Крестьяников",
+      "photoUrl":"assets/img/troupe/дима.jpg",
+      "plays":"struna",
+      "role":"Мистер Тайм"
+    },
+    {
+      "name":"Алеся Нагорная",
+      "photoUrl":"assets/img/troupe/нагорная.jpg"
+    },
+    {
+      "name":"Мария Топчило",
+      "photoUrl":"assets/img/troupe/маша.jpg"
+    },
+    {
+      "name":"Андрей Гуменный",
+      "photoUrl":"assets/img/troupe/гуменный.jpg",
+      "plays":"struna",
+      "role":"Юго-восточный ветер"
+    },
+    {
+      "name":"Юлия Сулина",
+      "photoUrl":"assets/img/troupe/сулина.jpg",
+      "plays":"struna",
+      "role":"Нарцисс Ангелина"
+    },
+    {
+      "name":"Юлия Подорожная",
+      "photoUrl":"assets/img/troupe/подорожная.jpg"
+    },
+    {
+      "name":"Александр Стариковский",
+      "photoUrl":"assets/img/troupe/стариковский.jpg",
+      "plays":"struna",
+      "role":"Нарцисс Ланкастер"
+    },
+    {
+      "name":"Анастасия Гальцева",
+      "photoUrl":"assets/img/troupe/гальцева.jpg",
+      "plays":"struna",
+      "role":"Бабочка Гретта"
+    }
+  ]
+}

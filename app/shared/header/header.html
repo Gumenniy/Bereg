@@ -1,0 +1,30 @@
+<header class="header">
+		<div class="wrap">
+      <div class="logo">
+
+         <a href="#/main"><img src="assets/img/logo.png" alt="">
+         
+         <div class="sign"><span>Театр</span> <span>Берег</span></div></a>
+      </div>
+      <div class="hamburger-menu" ng-click="navView()">
+         <div class="bar1"></div>
+         <div class="bar2"></div>
+         <div class="bar3"></div>
+      </div>
+
+			<nav >
+          <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+        <ul id="main-nav" >
+          <li> <a ng-class="getClass('/about')" ng-click="closeNav()" href="#/about">О нас</a> </li>
+          <li> <a ng-class="getClass('/plays')" ng-click="closeNav()" href="#/plays">Спектакли</a> </li>
+          <li> <a ng-class="getClass('/producer')" ng-click="closeNav()" href="#/producer">Режиссер</a> </li>
+          <li> <a ng-class="getClass('/troupe')" ng-click="closeNav()" href="#/troupe">Труппа</a> </li>
+          
+          <li> <a ng-class="getClass('/photos')" ng-click="closeNav()" href="#/photos">Фото</a> </li>
+          <li> <a ng-class="getClass('/news')" ng-click="closeNav()" href="#/news">Новости</a> </li>
+          <li> <a ng-class="getClass('/contacts')" ng-click="closeNav()" href="#/contacts">Контакты</a> </li>
+        </ul>
+      </nav>
+		</div>
+
+</header>

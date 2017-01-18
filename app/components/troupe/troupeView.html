@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" href="assets/css/troupepage.css">
+</head>
+<body>
+    <main clearfix  >
+        <div class="wrap">
+            <div class="troupe-raw">
+            <div class="troupeView">
+            <div class="troupeImage box-shadow" ng-repeat='item in troupe' ng-click="showDetails = ! showDetails">
+                        <div class="mainImg" ng-style="{'background-image':'url({{item.photoUrl}})'}">
+                    		
+                        </div>
+                		<div class="caption">{{item.name}}
+                		</div>
+                		<div class="bgmask"><i class="fa fa-plus-circle  fa-4x " aria-hidden="true"></i></div>
+                        <div id="myModal" ng-show="showDetails" class="modal">
+                        <!-- <span class="close">×</span> -->
+                        <div class="modal-content" >
+                            <img ng-src="{{item.photoUrl}}"  alt="Картинка" />
+                            </div>
+                        </div>
+                        
+            	
+        		</div>
+            </div>
+</div>
+            <i ng-click="showMoreTroupe()" class="fa fa-2x fa-chevron-down" aria-hidden="true"></i>
+        </div>    
+    </main>
+</body>

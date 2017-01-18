@@ -1,0 +1,56 @@
+<head>
+    <link rel="stylesheet" href="assets/css/playsitempage.css">
+</head>
+<body>
+  <main clearfix>
+    <div class="wrap">
+ 
+        <div class="playsitemview" >
+         
+			    <a href="#/plays"><span class="close">×</span></a>
+          <span class="img" ng-style="{'background-image':'url('+ photoUrl +')'}"><span class="playsbgmask"><h2 class="title">{{title}}</h2></span></span>
+			
+          <div class="info">    
+            <p class="desc" ng-bind-html="description| toTrusted"></p>
+            <br>
+            <h3>Исполнители ролей</h3>
+            <div class="roles">
+            <div class="rolesitem" ng-repeat="item in roles| filter:{plays:'struna'}">
+              <div class="roleImg" ng-style="{'background-image':'url({{item.photoUrl}})'}" ng-click="showDetails = ! showDetails"> 
+              <div id="myModal" ng-show="showDetails" class="modal">       
+              <div class="modal-content" >
+                  <img ng-src="{{item.photoUrl}}"  alt="Картинка" />
+              </div>
+              </div>         
+              </div>
+              
+              <div class="rolessign">
+                <p class="name">{{item.name}}</p>
+                <p class="role">{{item.role}}</p>
+                
+              </div>
+
+
+
+            </div>
+
+          </div>
+          </div>
+
+        </div>
+
+</div>
+      
+                    
+      
+
+     
+
+  </main>
+ 
+</body>
+
+      
+
+      
+

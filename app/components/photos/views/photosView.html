@@ -1,0 +1,49 @@
+<head>
+    <link rel="stylesheet" href="assets/css/photospage.css">
+</head>
+<body>
+    <main clearfix  >
+        <div class="wrap">
+        	<div class="photos-row-main">  
+                <div class="photosMain {{photo.type}}" ng-repeat="photo in photos| filter:{page:'main'}"  >
+                    
+                    <a  href="#/photos/{{photo.category}}">
+                    <div class="mainImg" >
+                		<span ng-style="{'background-image':'url({{photo.photoUrl}})'}"    ></span>
+                        <div class="photo-text"><div class="photo-sep"></div>{{photo.text}}</div>
+                    </div>
+                	<div class="bgmask"><i class="fa fa-camera  fa-4x " aria-hidden="true"></i>
+                    </div> 
+                    </a>  
+                    
+        		</div>
+                
+
+    		</div>
+                <div class="photos-galery-item">
+                <div class="photos-item-sign" ng-repeat="photo in photos| filter:{category:item}" ng-if="$index==0">{{photo.text}}
+     <a  href="#/photos"><span class="close">×</span></a>
+        </div>
+            <div class="photos-row-view"> 
+
+                 
+                <div class="photosMain photosMain-views {{photo.type}}" ng-repeat="photo in photos| filter:{category:item}" ng-click="showDetails = ! showDetails" >
+                      
+                        <div class="mainImg" >
+                            <span ng-style="{'background-image':'url({{photo.photoUrl}})'}"    ></span>
+                        </div>
+                        <div class="bgmask"><i class="fa fa-plus-circle  fa-4x " aria-hidden="true"></i>
+                        </div> 
+                        </a> 
+                        <div id="myModal" ng-show="showDetails" class="modal">
+                    
+                    <div class="modal-content" >
+                        <img ng-src="{{photo.photoUrl}}"  alt="Картинка" />
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+            </div>  	
+        </div>    
+    </main>
+</body>

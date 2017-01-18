@@ -1,0 +1,60 @@
+<head>
+    <link rel="stylesheet" href="assets/css/playspage.css">
+</head>
+<body>
+    <main clearfix  >
+        <div class="wrap">
+        	
+                <div class="playsMain  {{play.type}}" ng-repeat="play in plays| filter:{secondpage:'plays'}"  >
+                   
+                    <!-- <a  href="#/photos/{{photo.category}}"> -->
+                    <div class="mainImg" >
+                    
+                		<span ng-style="{'background-image':'url({{play.photoUrlforPlays}})'}" ></span>
+                        <div class="plays-text"><div class="plays-sep"></div>{{play.title}}
+                        <p >{{play.preview}}</p>
+                        </div>
+                        
+                    </div>
+                    <div ng-if="!play.status">
+                        <div class="bgmaskblack">
+                        
+                        <p> 
+                        <a target="_blank" href="http://bigdatarush.com/">
+                            <span class="circlebtn"><i class="fa fa-ticket "></i></span>
+                        </a>  
+                            <span class="sign">Билеты</span>
+                        </p>
+                        
+                        
+                        <p > 
+                        <a  href="#/plays/{{$index}}">
+                            <span class="circlebtn"><i class="fa fa-info "></i></span>
+                        </a>
+                            <span class="sign">О спектакле</span>
+                        </p>
+                           
+                        
+                        </div> 
+                    </div>
+                    <div ng-if="play.status">
+                        <div class="bgmaskblack"> <span>Скоро</span>
+                        </div> 
+                    </div>
+                   
+                   
+                    
+                    
+                      
+        		</div>
+
+
+    		
+                     
+       
+
+           
+            </div>  	
+          
+    </main>
+</body>

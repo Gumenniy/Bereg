@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-ng-app="theatreSite">
+  <head>
+  	<meta charset="UTF-8">
+  	<meta name="description" content="Мы  –  молодой театр из Днепра, выступающий на сцене Телетеатра (г. Днепр, Крутогорный спуск, 9)">
+  	<meta name="keywords" content="Берег,театр,Днепр,просто лопнула струна">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  
+    <title>Театр Берег</title>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+    <script src="assets/lib/angularJS/angular.min.js"></script>
+    <script src="assets/lib/angularJS/ngStorage.min.js"></script>
+    <script src="assets/lib/angularJS/angular-route.min.js"></script>
+    <script src="assets/lib/angularJS/angular-sanitize.min.js"></script>
+    <script src="assets/lib/jquery/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="assets/lib/FontAwesome/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="assets/css/generalcss.css">
+  	
+  </head>
+  <body>
+
+
+    <script src="app/app.js"></script>
+    <script src="app/shared/header/headerDirective.js"></script>
+    <script src="app/components/main/mainController.js"></script>
+    <script src="app/components/producer/producerController.js"></script>
+    <script src="app/components/troupe/troupeController.js"></script>
+    <script src="app/components/photos/controllers/photosController.js"></script>
+    <script src="app/components/contacts/contactsController.js"></script>
+    <script src="app/components/photos/controllers/photosItemController.js"></script>
+    <script src="app/components/news/controllers/newsController.js"></script>
+    <script src="app/components/news/controllers/newsItemController.js"></script>
+    <script src="app/components/plays/controllers/playsController.js"></script>
+    <script src="app/components/plays/controllers/playsItemController.js"></script>
+    <script src="app/components/about/aboutController.js"></script>
+    <script src="app/shared/footer/footerDirective.js"></script>
+
+    <div data-ng-controller="navController">
+      <div data-ng-class="getClass('/troupe')"></div>
+      <div data-ng-class="getClass('/photos')"></div>
+    </div>
+
+    <div data-header></div>
+    <data-ng-view class="clearfix"></data-ng-view>
+
+    <script>
+      theatreSite.controller('navController',
+        ['$scope','$http', '$location', function($scope,$http,$location,$path) {
+        $scope.getClass = function (path) {
+          if ($location.path().substr(0, path.length) === path) {
+            return 'popUpDialog-bg';
+          } 
+        }
+        
+        }]);
+      
+      function headerScroll(){
+        window.onscroll = function() {
+          if($(window).width()>1000)
+          {
+            if($(window).scrollTop()!=0){
+              document.querySelector(".header").style.background = "black";
+            }
+            else{
+              document.querySelector(".header").style.background = "rgba(0, 0, 0, 0.4)"
+            }
+          }
+        }
+      }
+      
+    </script>	
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<head>
+    <link rel="stylesheet" href="assets/css/newspage.css">
+    <script src="app/components/news/controllers/newsController.js"></script>
+</head>
+<body>
+
+    <main clearfix  >
+    <div class="wrap">
+    <div class="container">
+		
+				<ul class="event-list"  >
+					<li ng-repeat='item in newsItems track by $index'>
+					<a href="#/news/{{$index}}"> 
+						<time>
+							<span class="day">{{item.day}}</span>
+							<span class="month">{{item.month}}</span>
+						</time>
+						<span class="img" ng-style="{'background-image':'url({{item.photoUrlmini}})'}"    ></span>
+						<div class="info">
+							<h2 class="title">{{item.title}}</h2>
+							<p class="desc">{{item.descriptionForPreview}}</p>
+							
+						</div>
+						
+						<div class="arrow"><i class="fa fa-chevron-right  fa-4x " aria-hidden="true"></i>
+
+						</div></a>
+					</li>
+				</ul>
+
+	</div>
+	
+	
+	<i class="fa fa-2x fa-chevron-down" aria-hidden="true"></i>
+    	
+    
+	</div>
+	
+			</main>
+</body>

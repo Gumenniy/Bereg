@@ -1,0 +1,172 @@
+.event-list {
+  list-style: none;
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.event-list > li >a {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgb(51, 51, 51);
+  box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+  padding: 0px;
+  margin: 0px 0px 20px;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 0px;
+}
+.event-list > li{
+  transition:0.6s;
+}
+.event-list > li:hover{
+ 
+  box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.8);
+}
+.event-list > li >a> time,
+.event-list > li >a> .img {
+  display: block;
+  float: left;
+  width: 10%;
+  height: 120px;
+  color: rgb(255, 255, 255);
+  background-color: #4B6EA8;
+  text-align: center;
+  text-transform: uppercase;
+  background-size: cover;
+  background-position: 50% 25%;
+}
+
+.event-list > li >a> time > .day {
+  display: block;
+  font-size: 59pt;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.event-list > li >a> time > .month {
+  display: block;
+  font-size: 24pt;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.event-list > li >a> .info {
+    text-align: center;
+    background-color: rgb(207, 214, 228);
+    overflow: hidden;
+    position: relative;
+    height: 120px;
+    width: 70%;
+    text-align: left;
+    
+    float: left;
+}  
+
+.event-list > li >a> .info > .title, .event-list > li >a> .info > .desc {
+    padding: 15px 10px 0px 15px;
+    color: rgb(31, 56, 82);
+}
+  
+.event-list > li > .info > .title {
+  font-size: 17pt;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.event-list > li >a> .info > .desc {
+  font-size: 13pt;
+  font-weight: 300;
+  margin: 0px;
+     
+}
+
+.event-list > li >a .arrow {
+  float: left;
+  height: 120px;
+  width: 10%;
+  background: #4B6EA8;
+  text-align: center;
+  transition:0.6s;
+}
+.event-list > li >a .arrow:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.event-list > li >a .arrow i {
+  line-height: 120px;
+  display: block;
+  color: rgba(255, 255, 255, 0.83);
+}
+ 
+.event-list >li:nth-child(even)>a>time,.event-list > li:nth-child(even) .arrow {
+  background-color: #A0B8E5;
+}
+.event-list > li >a:hover{
+  cursor: pointer;
+}
+.event-list > li >a:hover .arrow{
+  opacity: 0.6;
+  
+}
+
+/*.container ul li:last-of-type {
+  opacity: 0.6;
+}*/
+
+
+@media screen and (max-device-width: 1024px),
+screen and (max-width: 1024px) {
+  .event-list > li >a .arrow {
+    display:none;
+  }
+  .event-list > li >a > time,
+  .event-list > li >a .img{
+    width:15%;
+  }
+  .event-list > li >a > .info > .title {
+    font-size: 16pt;
+  }
+  .event-list > li >a > .info > .desc {
+    font-size: 13pt;
+  }
+}
+
+@media screen and (max-device-width: 480px),
+screen and (max-width: 480px) {
+  .event-list > li >a > time{
+    width: 40%;
+    margin-top: 10%;
+    margin-right: -5px;
+    float: right;
+    background-color: rgba(75, 110, 168, 0.94);
+
+  } 
+  .event-list > li >a{
+    text-decoration:none;
+  }
+
+  .event-list > li >a > time > .day {
+    font-size: 56pt;
+  }
+  .event-list > li >a .img {
+    height: 180px;
+    width:100%;
+    float:none;
+  }
+  .event-list > li >a {
+    height: 100%;
+    width:95%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .event-list > li >a> .info{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    float:none;
+  }
+}
+

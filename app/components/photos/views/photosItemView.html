@@ -1,0 +1,32 @@
+<head>
+    <link rel="stylesheet" href="assets/css/photospage.css">
+    <link rel="stylesheet" href="assets/css/photospageview.css">
+</head>
+<body>
+    <div class="modal modal-content" clearfix  >
+        <div class="wrap">
+        <div class="photos-item-sign" ng-repeat="photo in photos| filter:{category:item}" ng-if="$index==0">{{photo.text}}
+     <a  href="#/photos"><span class="close">×</span></a>
+        </div>
+            <div class="photos-row-view"> 
+
+                 
+                <div class="photosMain photosMain-views {{photo.type}}" ng-repeat="photo in photos| filter:{category:item}" ng-click="showDetails = ! showDetails" >
+                      
+                        <div class="mainImg" >
+                            <span ng-style="{'background-image':'url({{photo.photoUrl}})'}"    ></span>
+                        </div>
+                        <div class="bgmask"><i class="fa fa-plus-circle  fa-4x " aria-hidden="true"></i>
+                        </div> 
+                        </a> 
+                        <div id="myModal" ng-show="showDetails" class="modal">
+                    
+                    <div class="modal-content" >
+                        <img ng-src="{{photo.photoUrl}}"  alt="Картинка" />
+                        </div>
+                    </div> 
+                </div>
+            </div>   	
+        </div>    
+    </div>
+</body>

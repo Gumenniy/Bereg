@@ -1,0 +1,55 @@
+<head>
+    <link rel="stylesheet" href="assets/css/newsitempage.css">
+</head>
+<body>
+  <main clearfix>
+    <div class="wrap">
+ 
+    
+      
+        <div class="newsitemview" >
+         	<!-- <time>
+              <span class="day">{{day}}</span>
+              <span class="month">{{month}}</span>
+            </time> -->
+			<a href="#/news"><span class="close">×</span></a>
+          <span class="img" ng-style="{'background-image':'url('+ photoUrl +')'}"    ><span class="playsbgmask"><h2 class="title">{{title}}</h2></span></span>
+			
+          <div class="info">
+              
+              <p class="desc" ng-bind-html="description| toTrusted"></p>
+          </div>
+     
+
+          <!-- <div class="photosNews" ng-repeat="photo in photos"  >
+                    
+                   
+                   <div class="photosNews"  ng-repeat="photo in photos" ng-click="showDetails = ! showDetails" >
+                      
+                        <div class="mainImg" >
+                            <span ng-style="{'background-image':'url({{photo.photoUrl}})'}"    ></span>
+                        </div>
+                        <div class="bgmask"><i class="fa fa-plus-circle  fa-4x " aria-hidden="true"></i>
+                        </div> 
+                         
+                        <div id="myModal" ng-show="showDetails" class="modal">
+                    
+                    <div class="modal-content" >
+                        <img ng-src="{{photo.photoUrl}}"  alt="Картинка" />
+                        </div>
+                    </div> 
+                </div>
+                      
+                    
+            </div> -->
+        </div>
+
+</div>
+
+     
+
+  </main>
+ 
+</body>
+
+

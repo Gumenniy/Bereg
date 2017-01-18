@@ -1,0 +1,88 @@
+.troupeImage {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 29%;
+  height: 100%;
+  margin-right: 1.5%;
+  margin-bottom: 2%;
+  margin-left: 0px !important;
+}
+
+.troupeImage:nth-child(3n){
+  margin-right: 0px;
+}
+
+
+.troupeImage .mainImg  {
+  width: 100%;  
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  background-size: cover;
+  background-position: 50% 25%;
+  height: 100%;
+}
+.troupe-raw{
+  text-align: center;
+}
+.troupeImage .caption {
+      margin-right: 0 !important;
+    margin-left: 0 !important;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    /* font-weight: 700; */
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    /* opacity: 0.8; */
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 2px 4px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+@media screen and (max-device-width: 1200px),
+screen and (max-width: 1200px) {
+  .troupeImage {
+    width: 29%;
+  }
+  .troupeImage:nth-child(3n) {
+  margin-right: 0;
+  }
+  .troupeImage:nth-child(4n) {
+  margin-right: 1.5%;
+  }
+}
+@media screen and (max-device-width: 769px),
+screen and (max-width: 769px) {
+  .troupeImage {
+    width: 48.5%;
+  }
+   .troupeImage:nth-child(3n) {
+  margin-right: 1%;
+  }
+  .troupeImage:nth-child(2n) {
+  margin-right: 0;
+  }
+}
+@media screen and (max-device-width: 580px),
+screen and (max-width: 580px) {
+  .troupeImage {
+    width: 100%;
+  }
+}
+
+
