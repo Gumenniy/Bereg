@@ -261,7 +261,9 @@ main {
   animation-name: opacity;
   animation-duration: 2s;
 }
-
+.main-preview{
+  display: none;
+}
 @-webkit-keyframes opacity {
   from {
     opacity: 0;
@@ -423,6 +425,7 @@ main {
 }
 
 footer {
+  display:none;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);
   color:white;
