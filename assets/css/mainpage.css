@@ -13,7 +13,7 @@ a{
     text-shadow: 2px 4px 6px rgba(0,0,0,0.2),
                  0px -5px 35px rgba(255,255,255,0.3);
 }
-.mainPreview{
+.main-preview{
   float: left;
   position: relative;
   margin-bottom: 50px;
@@ -21,8 +21,9 @@ a{
   width: 100%;
   background:rgba(180, 187, 203, 0.8);
   text-align: center;
+  display: block;
 }
-.mainPreview .img {
+.main-preview .img {
    position: relative;
     width: 100%;
     height: 260px;
@@ -32,10 +33,10 @@ a{
     background-position: 50% 12%;
     display: block;
 }
-.mainPreview .info{
+.main-preview .info{
   padding: 20px;
 }
-.mainPreview .title {
+.main-preview .title {
     display: block;
     font-size: 95px;
     line-height: 51px;
@@ -49,20 +50,20 @@ a{
     vertical-align: middle;
     letter-spacing: 5px;
 }
-.mainPreview .small {
+.main-preview .small {
     padding-top: 60px;
     font-size: 26px;
     font-weight: lighter;
     letter-spacing: 3px;
     color: #B6C0D5;
 }
-.mainPreview .info p{ 
+.main-preview .info p{ 
   font-size: 22px;
   line-height: 26px;
   color:rgb(31, 56, 82);
   margin-bottom: 6px;
  }
-.mainPreview .info p:first-of-type{
+.main-preview .info p:first-of-type{
   font-weight: bold;
 }
 
@@ -308,6 +309,14 @@ transition: background 0.6s;
   .btnpreview a{
   color:white;
 }
+
+footer{
+  display:block !important;
+}
+
+
+
+
 
 @media screen and (max-device-width: 1230px),
 screen and (max-width: 1230px) {
