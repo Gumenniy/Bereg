@@ -1,3 +1,6 @@
+#mainInfo{
+  display: none;  
+}
 .playsitemview{
   float: left;
   position: relative;
