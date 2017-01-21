@@ -1,3 +1,6 @@
+#mainInfo{
+  display: none;  
+}
 .newsitemview{
   float: left;
   position: relative;
