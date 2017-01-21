@@ -158,7 +158,7 @@ transition:0.9s;
 a:hover{
   color:rgb(31, 56, 82);
 }
-.btn:hover {
+.btn-about:hover {
   background: rgb(238, 240, 241);
   
 }
@@ -211,7 +211,7 @@ screen and (max-width: 480px) {
     width: 100%;
     height: 300px;
 }
-.btn {
+.btn-about {
    line-height: 40px;
     width: 170px;
     
