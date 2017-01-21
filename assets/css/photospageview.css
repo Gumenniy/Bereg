@@ -1,3 +1,6 @@
+#mainInfo{
+  display: none;  
+}
 .photosMain .mainImg span {
   width: 100%;
   height: 400px;
