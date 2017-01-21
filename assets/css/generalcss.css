@@ -661,4 +661,7 @@ screen and (max-width: 480px) {
     max-width: 100%;
     margin: 0 auto;
   }
+  main{
+    margin-bottom:  0!important;
+  }
 }
