@@ -109,7 +109,9 @@ screen and (min-width: 1400px) {
      border-right: 10px solid transparent; 
   }
 }*/
-
+#mainInfo{
+  display: none;  
+}
 @media screen and (max-device-width: 1060px),
 screen and (max-width: 1060px) {
   .horizontal {

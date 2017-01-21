@@ -89,6 +89,9 @@ main {
 .contacts-data .social-icon a i:hover {
   color: #A2C8EC;
 }
+#mainInfo{
+  display: none;  
+}
 @media screen and (max-device-width: 769px),
 screen and (max-width: 769px) {
   .contacts-bg {

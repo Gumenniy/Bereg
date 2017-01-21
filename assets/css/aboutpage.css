@@ -125,7 +125,7 @@ main{
 	margin-bottom: 20px;
 }
 
-.btn {
+.btn-about {
    margin: 0px auto;
   text-align: center;
   display: block;
@@ -160,7 +160,9 @@ a:hover{
   
 }
 
-
+#mainInfo{
+  display: none;  
+}
 @media screen and (max-device-width: 1024px),
 screen and (max-width: 1024px) {
   .raw .col .textabout {

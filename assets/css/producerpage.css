@@ -62,7 +62,9 @@
   font-size: 20px;
   line-height: 20px;
 }
-
+#mainInfo{
+  display: none;  
+}
 @media screen and (max-device-width: 450px),
 screen and (max-width: 450px) {
   .producer .main-info .main-picture {

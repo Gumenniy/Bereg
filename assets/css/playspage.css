@@ -127,6 +127,9 @@
     display: block;
     /* font-weight: normal; */
 }
+#mainInfo{
+  display: none;  
+}
 @media screen and (min-device-width: 1400px),
 screen and (min-width: 1400px) {
   .vertical {

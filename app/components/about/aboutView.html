@@ -1,6 +1,7 @@
 <head>
  <link rel="stylesheet" href="assets/lib/whhg-font/css/whhg.css">
     <link rel="stylesheet" href="assets/css/aboutpage.css">
+
 </head>
 <body>
 	<main clearfix >
@@ -15,14 +16,14 @@
                         <span class="sign">
                             <i class="{{item.icon}}" aria-hidden="true"></i>
                             <span class="textabout" ng-bind-html="item.textAbout"></span>
-                            <a class="btn" ng-href="{{item.moreInfoUrl}}">Подробнее</a>
+                            <a class="btn-about" ng-href="{{item.moreInfoUrl}}">Подробнее</a>
                         </span>
                     </div>
         			<div ng-if="$index%2==0" class="col middle">
                         <span class="sign">
                             <i class="{{item.icon}}" aria-hidden="true"></i>
                             <span class="textabout" ng-bind-html="item.textAbout"></span>
-                            <a class="btn" ng-href="{{item.moreInfoUrl}}">Подробнее</a>
+                            <a class="btn-about" ng-href="{{item.moreInfoUrl}}">Подробнее</a>
                         </span>
         		    </div>
                     <div class="col" ng-if="$index%2!=0">
@@ -39,7 +40,7 @@
                         <span class="sign">
                             <i class="{{item.icon}}" aria-hidden="true"></i>
                             <span class="textabout" ng-bind-html="item.textAbout"></span>
-                            <a class="btn" ng-href="{{item.moreInfoUrl}}">Подробнее</a>
+                            <a class="btn-about" ng-href="{{item.moreInfoUrl}}">Подробнее</a>
                         </span>
                     </div>
                    

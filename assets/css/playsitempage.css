@@ -160,3 +160,6 @@ color:rgb(8, 33, 59);
   
   font-weight: bold;
 }
+#mainInfo{
+  display: none;  
+}
