@@ -1,3 +1,6 @@
+#mainInfo{
+  display: none;  
+}
 .event-list {
   list-style: none;
   font-family: 'Lato', sans-serif;
