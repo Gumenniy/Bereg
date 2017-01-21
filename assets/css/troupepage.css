@@ -1,3 +1,6 @@
+#mainInfo{
+  display: none;  
+}
 .troupeImage {
   display: inline-block;
   vertical-align: top;
