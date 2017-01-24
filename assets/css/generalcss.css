@@ -667,14 +667,9 @@ screen and (max-width: 480px) {
     max-width: 100%;
     margin: 0 auto;
   }
-<<<<<<< HEAD
  main {
     margin-top: 96px !important;
     
    
-=======
-  main{
-    margin-bottom:  0!important;
->>>>>>> upstream/master
   }
 }
