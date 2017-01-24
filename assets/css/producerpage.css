@@ -1,3 +1,4 @@
+
 .producer {
   background-color: rgba(180, 187, 203, 0.8);
   width: 100%;
@@ -62,15 +63,13 @@
   font-size: 20px;
   line-height: 20px;
 }
-#mainInfo{
-  display: none;  
-}
+
 @media screen and (max-device-width: 450px),
 screen and (max-width: 450px) {
   .producer .main-info .main-picture {
     width: 100%;
     position: relative;
-    padding-right: 30px;
+    padding-right: 0px;
     float: left;
     margin-bottom: 20px;
   }

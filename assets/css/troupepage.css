@@ -1,3 +1,4 @@
+
 .troupeImage {
   display: inline-block;
   vertical-align: top;
@@ -53,9 +54,6 @@
   
   position: relative;
   margin: auto;
-}
-#mainInfo{
-  display: none;  
 }
 @media screen and (max-device-width: 1200px),
 screen and (max-width: 1200px) {

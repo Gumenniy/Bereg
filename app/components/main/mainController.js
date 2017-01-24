@@ -19,7 +19,7 @@ theatreSite.controller('mainController',
   }
   if ($(window).width()<480) {
     $(".poster").height(($(window).width()*0.94)*1.4);
-    
+    console.log( '111');
   }
 
    window.onscroll = function() {
@@ -59,6 +59,9 @@ else{
 
     });
   
+
+
+
   $http.get("app/components/news/news.json").then(function(response) {	
     $scope.news = response.data.news;
   });

@@ -1,3 +1,4 @@
+
 .playsitemview{
   float: left;
   position: relative;
@@ -159,7 +160,4 @@ color:rgb(8, 33, 59);
 .rolessign .role{
   
   font-weight: bold;
-}
-#mainInfo{
-  display: none;  
 }

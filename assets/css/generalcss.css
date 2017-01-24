@@ -548,9 +548,12 @@ screen and (max-width: 1200px) {
     max-width: 96%;
     margin: 0 auto;
   }
+  /* main{
+    margin-bottom:  0!important;
+  }*/
 }
-@media screen and (max-device-width: 768px),
-screen and (max-width: 768px) {
+@media screen and (max-device-width: 770px),
+screen and (max-width: 770px) {
   body:before {
   content: "";
   display: block;
@@ -567,9 +570,7 @@ screen and (max-width: 768px) {
   background-size: cover;
 }
     
-  .body_slides {
-    display: none
-  }
+  
   .header {
     background: black;
   }
@@ -600,8 +601,10 @@ screen and (max-width: 768px) {
     background-color: rgba(17, 17, 17, 0.95);
     overflow-x: hidden;
    
-    padding-top: 20%;
-    
+    /*padding-top: 20%;*/
+    /*display: inline-block;
+    vertical-align: middle;*/
+
     transition: 0.9s;
   }
 
@@ -626,9 +629,9 @@ screen and (max-width: 768px) {
   }
   nav .closebtn {
     position: absolute;
-    top: 33px;
     right: 20px;
     font-size: 76px;
+    line-height: 76px; 
     margin-left: 50px;
     color: white;
     text-decoration: none;
@@ -637,14 +640,13 @@ screen and (max-width: 768px) {
   nav .closebtn:hover{
     opacity: 0.6;
   }
-  main {
-    margin-top: 96px !important;
-    margin-bottom:  10px;
-   
-  }
-  .top-info .fa-chevron-right {
+  
+ /* nav #main-nav li:last-of-type{
+  margin-bottom: 0;
+  }*/
+/*  .top-info .fa-chevron-right {
      display: block !important; 
-}
+}*/
 }
 
 /*@media screen and (max-device-width: 1060px),
@@ -654,14 +656,20 @@ screen and (max-width: 1060px) {
     bottom: 0;
   }
 }*/
-
+/*main {
+    margin-top: 96px !important;
+    margin-bottom:  10px;
+   
+  }*/
 @media screen and (max-device-width: 480px),
 screen and (max-width: 480px) {
   .wrap {
     max-width: 100%;
     margin: 0 auto;
   }
-  main{
-    margin-bottom:  0!important;
+ main {
+    margin-top: 96px !important;
+    
+   
   }
 }

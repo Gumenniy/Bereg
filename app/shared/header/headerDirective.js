@@ -28,8 +28,22 @@ $scope.closeNav = function (){
       document.querySelector("nav").classList.remove("visible");
     }
 }
+function setTopForMenu(){
 
+if($(window).width()>770){
+$("#main-nav").css("margin-top",0+"px");  
+}
+else{
+  console.log($("#main-nav").height());
+  console.log($(window).height());
+var difference = ($(window).height() - $("#main-nav").outerHeight(true)) / 2;
+$("#main-nav").css("margin-top", difference+"px");
+}
 
+}
+$(window ).resize(function() {
+   setTopForMenu();
+    })
    }]
 }
 });

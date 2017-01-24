@@ -1,3 +1,4 @@
+
 .newsitemview{
   float: left;
   position: relative;
@@ -13,9 +14,6 @@
 .newsitemview .info{
   padding: 20px;
   
-}
-#mainInfo{
-  display: none;  
 }
 .newsitemview h2 {
     /* top: 160px; */
