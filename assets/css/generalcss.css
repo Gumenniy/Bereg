@@ -629,6 +629,7 @@ screen and (max-width: 770px) {
   }
   nav .closebtn {
     position: absolute;
+    top:0;
     right: 20px;
     font-size: 76px;
     line-height: 76px; 
