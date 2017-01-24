@@ -269,6 +269,46 @@ footer{
 
 
 
+<<<<<<< HEAD
+=======
+
+.btnpreview {
+    
+  position: relative;
+  display: inline-block;
+  
+  margin-top: 18px;
+  margin-bottom: 10px;
+  margin-right:30px;
+  font-size: 18px;
+  line-height: 45px;
+  min-width: 184px;
+  font-weight: 900;
+  background: rgba(75, 110, 168, 1);;
+  /*border: 2px solid rgba(75, 110, 168, 1);*/
+  color:white;
+  text-transform: uppercase;
+  text-decoration: none;
+  /*transition-duration: 0.6s;*/
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode";
+transition: background 0.6s;
+  }
+  .btnpreview:last-of-type{
+    margin-right:0;
+  }
+  .btnpreview a{
+  color:white;
+}
+
+footer{
+  display:block !important;
+}
+
+
+
+
+
+>>>>>>> upstream/master
 @media screen and (max-device-width: 1230px),
 screen and (max-width: 1230px) {
    .top-info { 
@@ -445,6 +485,7 @@ screen and (max-width: 580px) {
   text-align: left;
   height: 100%;
 }
+<<<<<<< HEAD
 .top-info .fa-chevron-right {
   display: inline-block;
 }
@@ -472,4 +513,6 @@ footer .contacts-social li i{
 footer .sign{
   font-size: 18px;
 }
+=======
+>>>>>>> upstream/master
 }

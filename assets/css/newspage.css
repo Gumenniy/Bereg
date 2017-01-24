@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+#mainInfo{
+  display: none;  
+}
+>>>>>>> upstream/master
 .event-list {
   list-style: none;
   font-family: 'Lato', sans-serif;

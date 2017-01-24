@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+#mainInfo{
+  display: none;  
+}
+>>>>>>> upstream/master
 .playsitemview{
   float: left;
   position: relative;

@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 
+=======
+#mainInfo{
+  display: none;  
+}
+>>>>>>> upstream/master
 .newsitemview{
   float: left;
   position: relative;
