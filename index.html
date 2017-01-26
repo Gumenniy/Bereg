@@ -45,7 +45,9 @@
     <script src="app/components/plays/controllers/playsItemController.js"></script>
     <script src="app/components/about/aboutController.js"></script>
 
-    
+     <div  data-ng-controller="navController">
+      <div data-ng-class="getClass('/troupe')"></div>
+      <div data-ng-class="getClass('/photos')"></div>
 	<header class="header">
     <div class="wrap">
       <div class="logo">
@@ -76,7 +78,16 @@
     </div>
 
 </header>
-  
+<div class="hidden">
+   {{hidden('/about')}}
+        {{hidden('/plays')}}
+        {{hidden('/producer')}}
+        {{hidden('/troupe')}}
+        {{hidden('/photos')}}
+        {{hidden('/news')}}
+        {{hidden('/contacts')}}
+        </div>
+      </div>
     <div id="mainInfo">
     		<main class="clearfix">
 						<div class="wrap">
@@ -230,7 +241,7 @@
 				</footer>
     			</main>
 				</div>
-        <div class="hidden" data-ng-controller="navController">
+        <!-- <div class="hidden" data-ng-controller="navController">
       <div data-ng-class="getClass('/troupe')"></div>
       <div data-ng-class="getClass('/photos')"></div>
         {{hidden('/about')}}
@@ -240,7 +251,7 @@
         {{hidden('/photos')}}
         {{hidden('/news')}}
         {{hidden('/contacts')}}
-      </div>
+      </div> -->
     <data-ng-view class="clearfix"></data-ng-view>
      		
       	
@@ -263,7 +274,28 @@
           	$('#mainInfo').hide();
           }
        } 
-       
+       $scope.getClass = function (path) {
+    if ($location.path().substr(0, path.length) === path) {
+      return 'activeItem';
+
+    } else {
+      return '';
+    }
+  }
+
+
+  $scope.navView = function () {
+   document.querySelector("nav").classList.add("visible");
+   
+   document.querySelector("nav #main-nav").style.opacity = "1";
+  }
+$scope.closeNav = function (){
+  
+  if(document.querySelector(".visible")){
+      
+      document.querySelector("nav").classList.remove("visible");
+    }
+}
         }]);
 
 
