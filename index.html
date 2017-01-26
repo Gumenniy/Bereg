@@ -2,8 +2,8 @@
 <html data-ng-app="theatreSite">
   <head>
   	<meta charset="UTF-8">
-  	<meta name="description" content="Мы  –  молодой театр из Днепра, выступающий на сцене Телетеатра (г. Днепр, Крутогорный спуск, 9)">
-  	<meta name="keywords" content="Берег,театр,Днепр,просто лопнула струна">
+  	<meta name="description" content="Берег  –  молодой театр из Днепра. Мы выступаем на сцене Телетеатра (г. Днепр, Крутогорный спуск, 9). Режиссер и автор пьес – Вячеслав Волконский.">
+  	<meta name="keywords" content="театр Берег, Берег, Днепр театр, просто лопнула струна, театры Днепропетровск, Волконский, абсурд, картонный ангел, лирическая комедия">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
   
     <title>Театр Берег</title>
@@ -45,17 +45,7 @@
     <script src="app/components/plays/controllers/playsItemController.js"></script>
     <script src="app/components/about/aboutController.js"></script>
 
-    <div data-ng-controller="navController">
-      <div data-ng-class="getClass('/troupe')"></div>
-      <div data-ng-class="getClass('/photos')"></div>
-	      {{hidden('/about')}}
-	      {{hidden('/plays')}}
-	      {{hidden('/producer')}}
-	      {{hidden('/troupe')}}
-	      {{hidden('/photos')}}
-	      {{hidden('/news')}}
-	      {{hidden('/contacts')}}
-      </div>
+    
 
 	<div data-header></div>
   
@@ -210,6 +200,17 @@
 				</footer>
     			</main>
 				</div>
+        <div data-ng-controller="navController">
+      <div data-ng-class="getClass('/troupe')"></div>
+      <div data-ng-class="getClass('/photos')"></div>
+        {{hidden('/about')}}
+        {{hidden('/plays')}}
+        {{hidden('/producer')}}
+        {{hidden('/troupe')}}
+        {{hidden('/photos')}}
+        {{hidden('/news')}}
+        {{hidden('/contacts')}}
+      </div>
     <data-ng-view class="clearfix"></data-ng-view>
      		
       	
