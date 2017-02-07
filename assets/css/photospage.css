@@ -19,7 +19,10 @@
   border-right: 10px solid  transparent;
  margin-bottom: 10px;
 }
-
+.photosMain:last-child {
+    margin-bottom: 15px;
+    
+}
 .photosMain .mainImg span {
   width: 100%;
   height: 460px;
@@ -154,6 +157,7 @@ screen and (max-width: 480px) {
   }
   .photosMain  {   
     border:none;
+    margin-bottom: 0px;
   }
   .photos-row-main {
     border: none;
@@ -164,6 +168,9 @@ screen and (max-width: 480px) {
     padding:10px;
     background: white;
   }
+  .photosMain:last-child {
+    margin-bottom: 0px;
+}
    
 }
 

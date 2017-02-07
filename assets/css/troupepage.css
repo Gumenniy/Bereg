@@ -6,7 +6,7 @@
   width: 29%;
   height: 100%;
   margin-right: 1.5%;
-  margin-bottom: 2%;
+  margin-bottom: 15px;
   margin-left: 0px !important;
 }
 
@@ -84,6 +84,11 @@ screen and (max-width: 580px) {
   .troupeImage {
     width: 100%;
   }
+  .troupeImage {
+  
+  margin-bottom: 0px;
+  
+}
 }
 
 

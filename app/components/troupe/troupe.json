@@ -2,49 +2,65 @@
   "troupe": [
     {
       "name":"Евгения Плотникова",
+      "display":"show",
       "photoUrl":"assets/img/troupe/женя.jpg"
     },
     {
       "name":"Дмитрий Крестьяников",
+      "display":"show",
       "photoUrl":"assets/img/troupe/дима.jpg",
       "plays":"struna",
       "role":"Мистер Тайм"
     },
     {
       "name":"Алеся Нагорная",
+      "display":"show",
       "photoUrl":"assets/img/troupe/нагорная.jpg"
     },
     {
       "name":"Мария Топчило",
+      "display":"show",
       "photoUrl":"assets/img/troupe/маша.jpg"
     },
     {
       "name":"Андрей Гуменный",
+      "display":"show",
       "photoUrl":"assets/img/troupe/гуменный.jpg",
       "plays":"struna",
       "role":"Юго-восточный ветер"
     },
     {
       "name":"Юлия Сулина",
+      "display":"show",
       "photoUrl":"assets/img/troupe/сулина.jpg",
       "plays":"struna",
       "role":"Нарцисс Ангелина"
     },
     {
       "name":"Юлия Подорожная",
+      "display":"show",
       "photoUrl":"assets/img/troupe/подорожная.jpg"
     },
     {
       "name":"Александр Стариковский",
+      "display":"show",
       "photoUrl":"assets/img/troupe/стариковский.jpg",
       "plays":"struna",
       "role":"Нарцисс Ланкастер"
     },
     {
       "name":"Анастасия Гальцева",
+      "display":"show",
       "photoUrl":"assets/img/troupe/гальцева.jpg",
       "plays":"struna",
       "role":"Бабочка Гретта"
+    },
+    {
+      "name":"Вячеслав Волконский",
+      "display":"hidden",
+      "photoUrl":"assets/img/producer/main.jpg",
+      "plays":"perekatipole",
+      "role":"Автор и исполнитель"
     }
   ]
 }

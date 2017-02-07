@@ -133,3 +133,26 @@
 .close:hover{
   opacity: 1;
 }
+.newsitemview iframe{
+  height: 550px;
+}
+@media screen and (max-device-width: 480px),
+screen and (max-width: 480px) {
+.newsitemview h2 {
+    font-size: 34px;
+    line-height: 34px;
+}
+.newsitemview .info p img {
+    width: 100%;
+    margin-top: 2%;
+    
+    margin-right: 0%;
+    
+}
+.newsitemview{
+  margin-bottom: 0;
+}
+.newsitemview iframe{
+  height: 250px;
+}
+}

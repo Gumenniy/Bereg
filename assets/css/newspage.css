@@ -144,10 +144,7 @@ screen and (max-width: 480px) {
     background-color: rgba(75, 110, 168, 0.94);
 
   } 
-  .event-list > li >a{
-    text-decoration:none;
-  }
-
+ 
   .event-list > li >a > time > .day {
     font-size: 56pt;
   }
@@ -157,11 +154,15 @@ screen and (max-width: 480px) {
     float:none;
   }
   .event-list > li >a {
+  	 text-decoration:none;
     height: 100%;
     width:95%;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     position: relative;
+  }
+  .event-list > li:first-of-type{
+		margin-top: 110px;
   }
   .event-list > li >a> .info{
     width: 100%;

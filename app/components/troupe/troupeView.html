@@ -6,9 +6,10 @@
         <div class="wrap">
             <div class="troupe-raw">
             <div class="troupeView">
-            <div class="troupeImage box-shadow" ng-repeat='item in troupe' ng-click="showDetails = ! showDetails">
+            <div class="troupeImage box-shadow" ng-repeat="item in troupe|filter:{display:'show'}" ng-click="showDetails = ! showDetails">
+        
                         <div class="mainImg" ng-style="{'background-image':'url({{item.photoUrl}})'}">
-                    		
+                    	
                         </div>
                 		<div class="caption">{{item.name}}
                 		</div>

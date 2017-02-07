@@ -264,8 +264,13 @@ a{
 footer{
   display:block !important;
 }
-
-
+.moreinfo{
+  color:rgba(31, 56, 82,0.7);
+  transition: 0.7s;
+}
+.moreinfo:hover{
+  color:rgb(31, 56, 82);
+}
 
 
 
@@ -293,9 +298,45 @@ screen and (max-width: 1230px) {
 footer .contacts-social ul{
   margin-left: 15px;
 }
+.top-info h3 {
+    line-height: 21px;
+    font-size: 25px;
 }
-@media screen and (max-device-width: 900px),
-screen and (max-width: 900px) {
+.top-info .main-content p {
+    line-height: 23px;
+    font-size: 19px;
+}
+.top-info .date{
+  margin-left: 5px;
+}
+.top-info .contact-info {  
+    margin-top: 9px;
+    font-size: 18px;
+}
+.top-info .contact-info .fa-map-marker {
+    font-size: 20px;
+}
+.top-info .contact-info i {
+    font-size: 22px;
+}
+.btn-poster{
+  font-size: 21px;
+    min-width: 216px;
+        line-height: 52px;
+}
+.top-info .date .month, .newsblock .newsitem time .month {
+    font-size: 27pt;
+}
+.top-info .date .time {
+    font-size: 23px;
+    line-height: 1.5;
+}
+.top-info .date .day, .newsblock .newsitem time .day {   
+    font-size: 50pt; 
+}
+}
+@media screen and (max-device-width: 1000px),
+screen and (max-width: 1000px) {
    .top-info { 
     width: 100%;
     height: 100%;
@@ -316,6 +357,28 @@ footer .sign{
     font-size: 43px;
     line-height: 50px;
 }
+.top-info .main-content p {
+    line-height: 19px;
+    font-size: 17px;
+}
+.top-info h3 {
+    line-height: 25px;
+    font-size: 25px;
+}
+.top-info .contact-info {
+    margin-top: 3px;
+    font-size: 18px;
+}
+.top-info .date .month, .newsblock .newsitem time .month {
+    font-size: 24pt;
+}
+.top-info .date .time {
+    font-size: 21px;
+    line-height: 1.5;
+}
+.top-info .date .day, .newsblock .newsitem time .day {   
+    font-size: 45pt; 
+}
 }
 @media screen and (max-device-width: 700px),
 screen and (max-width: 700px) {
@@ -327,9 +390,21 @@ screen and (max-width: 700px) {
  
     width: 45%;
   }
+  .top-info .main-content p {
+    line-height: 18px;
+    font-size: 16px;
 }
-@media screen and (max-device-width: 580px),
-screen and (max-width: 580px) {
+.top-info h3 {
+    line-height: 21px;
+    font-size: 21px;
+}
+.top-info .contact-info {
+    margin-top: 3px;
+    font-size: 15px;
+}
+}
+@media screen and (max-device-width: 620px),
+screen and (max-width: 620px) {
 #main-nav a {
     font-size: 32px;
     line-height: 42px;
@@ -339,9 +414,9 @@ screen and (max-width: 580px) {
     float: left;
     width: 95%;
   }
-  main {
+  /*main {
     margin-top: 96px !important;
-  }
+  }*/
   .mainInfo {
     display: none;
   }
@@ -454,7 +529,7 @@ screen and (max-width: 580px) {
 }
 footer .contacts-social ul{
   margin-left: 0;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 footer .contacts-social li{
   font-size: 17px;
@@ -462,14 +537,19 @@ footer .contacts-social li{
 
 footer {
     
-    padding-left: 20px;
-   text-align: left;
+  padding-left: 0px;
+   text-align: center !important;
    
 }
 footer .contacts-social li i{
   font-size: 17px;
+  line-height: 23px;
 }
 footer .sign{
   font-size: 18px;
+}
+footer .partners {
+     margin-right: 0px;
+     margin-top: 5px; 
 }
 }

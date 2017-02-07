@@ -7,9 +7,8 @@ theatreSite.controller('contactsController',
 		setMap();
    	})
 	function setMap(){
-		console.log("work");
 		if ($(window).width()>769) {
-			$(".contacts-bg").height($(window).height()-116);
+			$(".contacts-bg").height($(window).height()-126);
 			$(".contacts-data").height($(window).height()-$(window).height()*0.90);
 		}
 		if ($(window).width()<=769&&$(window).width()>450) {

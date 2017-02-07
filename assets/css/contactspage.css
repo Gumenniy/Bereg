@@ -1,11 +1,8 @@
 
-main {
-  margin-top: 0;
-}
+
 
 .contacts-bg {
   position: relative;
-  top: 106px;
   left: 0;
   width: 100%;
   background: rgba(75, 110, 168, 0.88);

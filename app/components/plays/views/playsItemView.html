@@ -15,7 +15,8 @@
             <br>
             <h3>Исполнители ролей</h3>
             <div class="roles">
-            <div class="rolesitem" ng-repeat="item in roles| filter:{plays:'struna'}">
+
+            <div class="rolesitem" ng-repeat="item in roles| filter:{plays:currentrole}">
               <div class="roleImg" ng-style="{'background-image':'url({{item.photoUrl}})'}" ng-click="showDetails = ! showDetails"> 
               <div id="myModal" ng-show="showDetails" class="modal">       
               <div class="modal-content" >
@@ -23,7 +24,7 @@
               </div>
               </div>         
               </div>
-              
+            
               <div class="rolessign">
                 <p class="name">{{item.name}}</p>
                 <p class="role">{{item.role}}</p>

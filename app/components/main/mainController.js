@@ -1,27 +1,6 @@
 theatreSite.controller('mainController', 
 	['$scope','$http',function($scope, $http) {
-	 
-  if ($(window).width()>1230) {
-    $(".poster").height(((1230*0.488)*0.55)*1.4);
-   
-  }
-  if ($(window).width()<1230&&$(window).width()>900) {
-    $(".poster").height((($(window).width())*0.24)*1.4);
-   
-  }
-  if ($(window).width()<900&&$(window).width()>680) {
-    $(".poster").height((($(window).width())*0.338)*1.4);
-   
-  }
-  if ($(window).width()<700&&$(window).width()>580) {
-    $(".poster").height((($(window).width())*0.44)*1.4);
-   
-  }
-  if ($(window).width()<480) {
-    $(".poster").height(($(window).width()*0.94)*1.4);
-    console.log( '111');
-  }
-
+	
    window.onscroll = function() {
        
         if($(window).scrollTop()!=0){
@@ -35,31 +14,35 @@ else{
         }
       }
 
+setPosterSize();
 
-
-    $( window ).resize(function() {
-      if ($(window).width()<480) {
-     $(".poster").height((($(window).width()*0.95)*0.98)*1.4);
-   }
-   
-     if ($(window).width()<1230&&$(window).width()>900) {
-    $(".poster").height((($(window).width())*0.24)*1.4);
-   
-  }
-  if ($(window).width()<900&&$(window).width()>680) {
-    $(".poster").height((($(window).width())*0.338)*1.4);
-   
-  }
-  if ($(window).width()<700&&$(window).width()>580) {
-    $(".poster").height((($(window).width())*0.44)*1.4);
-   
-  }
-  if ($(window).width()>1230) {
-    $(".poster").height(((1230*0.488)*0.55)*1.4);}
-
+    $(window).resize(function() {
+     
+      setPosterSize();
     });
   
-
+function setPosterSize(){
+    if ($(window).width()>1230) {
+      $(".poster").height(((1230*0.488)*0.55)*1.4);
+     
+    }
+    if ($(window).width()<1230&&$(window).width()>1000) {
+      $(".poster").height((($(window).width())*0.24)*1.4);
+     
+    }
+    if ($(window).width()<1000&&$(window).width()>700) {
+      $(".poster").height((($(window).width())*0.338)*1.4);
+     
+    }
+    if ($(window).width()<700&&$(window).width()>620) {
+      $(".poster").height((($(window).width())*0.44)*1.4);
+     
+    }
+    if ($(window).width()<620) {
+      $(".poster").height(($(window).width()*0.94)*1.4);
+      
+    }
+  }
 
 
   $http.get("app/components/news/news.json").then(function(response) {	

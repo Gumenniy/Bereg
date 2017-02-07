@@ -43,7 +43,8 @@ ul {
 }
 
 main {
-  margin-top: 115px;
+ 
+ margin-top: 110px;
   
 }
 
@@ -411,7 +412,7 @@ main {
   float: right;
   cursor: pointer;
   display: none;
-  padding: 28px 4%;
+  padding: 28px 15px;
 }
 
 .bar1,
@@ -425,12 +426,12 @@ main {
 }
 
 footer {
-  display:none;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);
   color:white;
   text-align:   center;
   clear:both;
+  
 }
 
 footer .partners {
@@ -553,9 +554,7 @@ screen and (max-width: 1200px) {
     max-width: 96%;
     margin: 0 auto;
   }
-  /* main{
-    margin-bottom:  0!important;
-  }*/
+  
 }
 @media screen and (max-device-width: 770px),
 screen and (max-width: 770px) {
@@ -577,7 +576,7 @@ screen and (max-width: 770px) {
     
   
   .header {
-    background: black;
+    background: black !important;
   }
   .hamburger-menu {
     display: block;
@@ -675,7 +674,10 @@ screen and (max-width: 480px) {
   }
  main {
     margin-top: 96px !important;
-    
+    margin-bottom: 0;
    
   }
+  /*footer {
+    top: 96px;
+  }*/
 }

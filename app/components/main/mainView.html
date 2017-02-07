@@ -1,1 +1,78 @@
+<head>
+    <link rel="stylesheet" href="assets/css/mainpage.css">
+</head>
+<body>
+  <main clearfix>
+    <div class="wrap">
 
+      	<div class="main-preview box-shadow" > 
+			      		<span class="img box-shadow" style="background-image:url(assets/img/plays/struna_main.jpg)"><span class="bgmaskblack"><span class="title small">театр</span><span class="title">Берег</span></span></span>
+			      
+			      		<div class="info">
+			        		<p>Мы  –  молодой театр из Днепра, выступающий на сцене Телетеатра (г. Днепр, Крутогорный спуск, 9). </p>
+			        		<p> Стиль нашего творчества разносторонен: комедия, драма, лирика, сатира, абсурд. Герои спектаклей взяты из жизни. Возможно, Вы даже сможете узнать в них себя и взглянуть на себя со стороны!</p>
+			        		<a class="btn btn-preview" ng-href="#/about"><i class="fa fa-info-circle" aria-hidden="true"></i>Подробнее</a>
+			        		<a class="btn btn-preview" ng-href="#/contacts"><i class="fa fa-address-card" aria-hidden="true"></i>Контакты</a>
+			       		</div>    
+			    		</div>
+
+      <div class="mainpage">
+        <h1>Афиша</h1>
+        <div class="poster">
+          <div class="top-info box-shadow" ng-repeat="play in plays| filter:{firstpage:'main'}" >
+            <div class="mainImg" ng-style="{'background-image':'url({{play.photoUrlforPoster}})'}" ng-click="showDetails = ! showDetails">
+              <div id="myModal" ng-show="showDetails" class="modal">
+                <div class="modal-content" >
+                    <img ng-src="{{play.bigPhotoUrlforPoster}}"  alt="Картинка" />
+                </div>
+              </div>     
+            </div>
+            <div class="mainInfo">
+              <div class="date">
+    			      <span class="day">{{play.day}}</span>
+    			      <span class="month">{{play.month}}</span>
+                <span class="time"><i class="fa  fa-clock-o" aria-hidden="true"></i>{{play.time}}</span> 
+    		      </div>
+              <div class="main-content">
+                <h3>{{play.title}}</h3>
+                <p>{{play.mini_description}} <a href="#/plays/{{$index}}"><i class="moreinfo fa fa-info-circle" aria-hidden="true" title="Подробнее"></i></a></p>
+              </div>
+              <div class="contact-info"><i class="fa  fa-map-marker" aria-hidden="true"></i>{{play.address}}</div>
+              <div class="contact-info "><i class="fa  fa-mobile" aria-hidden="true"></i>{{play.phone}}</div>
+            </div>
+            <div class="btns">
+              	<div class="btn-moreinfo">
+                    <a href="#/plays/{{$index}}"  class="btn btn-poster"><i class="fa fa-info-circle "></i>Подробнее <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="btn-holder">
+                	<a href="{{play.buyref}}" target="_blank" class="btn btn-poster"><i class="fa fa-ticket "></i>Купить билет <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <h1>Новости</h1>
+        <div class="newsblock">
+          <div  class="newsitem" ng-repeat="item in news| filter:{page:'main'}">
+            <a ng-href="#/news/{{$index}}">
+              <time>
+                <span class="day">{{item.day}}</span>
+                <span class="month">{{item.month}}</span>
+              </time>
+              <span class="img" ng-style="{'background-image':'url({{item.photoUrlmini}})'}"></span>
+              <div class="info">
+                <h2 class="title">{{item.title}}</h2>
+                <p class="desc">{{item.descriptionForPreview}}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        	<a class="btn btn-main" ng-href="#/news"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Все новости</a>
+        
+            <i class="fa fa-2x fa-chevron-down" aria-hidden="true"></i>
+      </div> 
+    </div>
+    <div footer></div>
+  </main>
+  
+</body>
