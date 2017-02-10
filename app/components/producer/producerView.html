@@ -7,10 +7,10 @@
             <div class="producer">
                 <div class="main-info">
                     <div class="main-picture">
-                        <img src="assets/img/producer/main.jpg" alt="">
+                        <img src="assets/img/producer/volkonskiy/main.jpg" alt="">
                         <ul class="social-icon">
                             <li >
-                                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <a target="_blank" href="https://www.facebook.com/Strix.Volkonskij"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li >
                             <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                         </ul>
@@ -19,16 +19,51 @@
 
                         <h3>Вячеслав Волконский</h3>
 
-                        <p>Песни из концертной программы «Перекати-поле» отличаются особой мелодикой, которая зачастую напоминает умиротворенные баллады – загадочные и искренние. Но есть и взрывные, резкие, сквозь мелодику которых пробиваются и горькая ностальгия, и личные переживания автора. По мнению музыкальных критиков (Н. Иванова, В. Курилко), песни автора и исполнителя В. Волконского вполне заслуженно можно отнести к стилистике и городского романса, и нео-фолка, и так называемого бард-барокко. 
+                        <p>Профессиональный режиссер и актер театра драмы. Закончил курс Актерского искусства и режиссуры Санкт-Петербургской Государственной Академии Театрального Искусства в 2002 году.
                         <br><br>
-                        «Так называемые актёрские песни Вячеслава, к счастью, не совсем актёрские. Они особенные. Это вполне разумный и безусловно подлинный арт-объект, осмысленный и современный в своём роде. Мелодичный и искренний…
+                        В качестве режиссера создал более 10-ти спектаклей в профессиональных театрах Днепра. Самые яркие и известные из которых вы найдете ниже. Стиль творчества разнообразен, с яркими новаторскими нотами и элементами абсурда. Это и драма и комедия и даже сказки для детей, но непременно с тонким юмором и сложным, глубоким миром, который рождается и живет на сцене.
+                        <br><br>
+                        В театре Берег Вячеслав  уже более двух лет, и это тот случай, когда актеры и режиссер сплочены идеей и искусством, а не комерческим проектом. Образы рождаются в процессе репетиций и это частичка каждого актера умело подмеченная и собранная режиссером в спектакль. 
                         </p>
                     </div>
                 </div>
+            </div>
+            <h2>Спектакли</h2>
+                <div class="producerplays">    
+                    
+                   
+                        <div class="playitem" ng-repeat="item in plays">
+                          <a target="_blank" href="{{item.playUrl}}"><div class="playImg" ng-style="{'background-image':'url({{item.photoUrl}})'}" > 
+                                
+                          </div>
+                          </a>
+                          <div class="playsign">
+                            <p class="name" ng-bind-html="item.name|toTrusted"></p>
 
+                          </div>
+                        </div>
+                    </div>
+                <h2>Фотографии</h2>
+               <div class="photos-row-view"> 
 
-
-            </div>    
+                 
+                <div class="photosMain photosMain-views {{photo.type}}" ng-repeat="photo in photos" ng-click="showDetails = ! showDetails" >
+                      
+                        <div class="mainImg" >
+                            <span ng-style="{'background-image':'url({{photo.photoUrl}})'}"    ></span>
+                        </div>
+                        <div class="bgmask"><i class="fa fa-plus-circle  fa-4x " aria-hidden="true"></i>
+                        </div> 
+                        
+                        <div id="myModal" ng-show="showDetails" class="modal">
+                    
+                    <div class="modal-content" >
+                        <img ng-src="{{photo.photoUrl}}"  alt="Картинка" />
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+                <a target="_blank" class="btn btn-main prpage" href="https://www.facebook.com/Strix.Volkonskij/photos"><i class="fa fa fa-camera" aria-hidden="true"></i>Больше фотографий</a>  
         </div>    
     </main>   
 </body>

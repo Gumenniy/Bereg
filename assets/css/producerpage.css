@@ -4,6 +4,7 @@
   width: 100%;
   color: white;
   float: left;
+  margin-bottom: 50px;
 }
 
 .producer .main-info {
@@ -54,7 +55,7 @@
 .producer .main-info .description h3 {
   font-family: 'Lato', sans-serif;
   font-size: 38px;
-  padding-top: 70px;
+  padding-top: 55px;
   padding-bottom: 30px;
 }
 
@@ -63,9 +64,188 @@
   font-size: 20px;
   line-height: 20px;
 }
+.producerplays {
+    float: left;
+    /* display: inline-block; */
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(180, 187, 203, 0.8);
+    width: 100%;
+    margin-bottom: 50px;
+    padding-top:40px;
+}
+.producerplays .playitem{
+  text-align: center;
+  
+display: inline-block;
+    margin-right: 25px;
+   margin-bottom: 40px;
+}
+.producerplays .playitem:last-of-type{
+  margin-right: 0;  
+}
+.producerplays .playImg{
+  width: 170px;
+  height: 170px;
+  background-size: cover;
+    /*background-position: 50% 25%;*/
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 0px 5px rgb(51, 51, 51);
+  box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+}
+.producerplays .playImg:hover{
+  cursor:pointer;
+}
+.producerplays .playsign{
+display: block;
+color:rgb(8, 33, 59);
+width: 200px;
+}
+.producerplays .playsign .name{
+   font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+  
+}
 
+.producerplays .playsign .role{
+  
+  font-weight: bold;
+}
+.playitem:nth-child(5n){margin-right: 0;}
+
+ h2 {
+    
+    clear: both;
+    margin-top: 30px;
+    color: #E9E9E9;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    text-shadow: 2px 4px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.photos-row-view {
+ margin-top: 35px;
+  padding-right: 0;
+ 
+}
+
+.photos-row-main .photosMain:last-child  {
+  border-right: none;
+}
+
+.photosMain {
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  position: relative;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+ 
+ margin-bottom: 10px;
+}
+.photosMain:last-child {
+    margin-bottom: 15px;
+    
+}
+.photosMain .mainImg span {
+  width: 100%;
+  height: 370px;
+  background-size: cover;
+  background-position: 50% 25%;
+  display: block;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  box-shadow: 0px 0px 5px rgb(51, 51, 51);
+  box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+}
+.photosMain-views .mainImg span{
+  height: 370px;
+}
+
+.horizontal {
+  width: 30%;
+  border-right:none;
+}
+.vertical {
+  width: 20%;
+}
+.prpage{
+  width: 280px;
+}
+
+
+@media only screen  and (max-device-width: 1024px),
+screen  and (max-width: 1024px) {
+  .producer {
+    float: none;
+  }
+  .producer .main-info .main-picture {
+    width: 50%;
+    position: relative;
+    padding-right: 20px;
+    float: left;
+    margin-bottom: 20px;
+  }
+  .producer .main-info .description {
+    padding-top: 0;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  .producer .main-info .description h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 28px;
+    line-height: 28px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+  .producer .main-info .description p {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .playitem:nth-child(5n){margin-right: 25px;}
+  .playitem:nth-child(4n){margin-right: 0;}
+  .horizontal {
+  width: 50%;
+  border-right:none;
+}
+.vertical {
+  width: 50%;
+}
+.photosMain {
+    margin-bottom: 0px; 
+}
+.producer .main-info {
+   
+    height: 500px;
+}
+.producer .main-info .main-picture img {
+    
+    height: 500px;
+}
+
+}
+@media screen and (max-device-width: 768px),
+screen and (max-width: 768px) {
+   .producer .main-info {
+   
+    height: 100%;
+}
+.producer .main-info .main-picture img {
+    
+    height: 100%;
+}
+  .playitem:nth-child(3n){margin-right: 0px;}
+  .playitem:nth-child(4n){margin-right: 25px;}
+}
 @media screen and (max-device-width: 450px),
 screen and (max-width: 450px) {
+ 
   .producer .main-info .main-picture {
     width: 100%;
     position: relative;
@@ -88,39 +268,26 @@ screen and (max-width: 450px) {
     font-size: 16px;
     line-height: 16px;
   }
-  
-  
-
+   .horizontal {
+  width: 100%;
+  border-right:none;
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px),
-and (min-width: 768px) and (max-device-width: 1024px) {
-  .producer {
-    float: none;
-  }
-  .producer .main-info .main-picture {
-    width: 50%;
-    position: relative;
-    padding-right: 20px;
-    float: left;
-    margin-bottom: 20px;
-  }
-  .producer .main-info .description {
-    padding-top: 0;
-    padding-left: 20px;
-    padding-bottom: 10px;
-  }
-  .producer .main-info .description h3 {
-    font-family: 'Lato', sans-serif;
-    font-size: 28px;
-    line-height: 28px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-  }
-  .producer .main-info .description p {
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    line-height: 16px;
-  }
-
+.vertical {
+  width: 100%;
+}
+/*.photosMain {
+    margin-bottom: 0px; 
+}
+  */
+.btn {
+    font-size: 20px;
+   
+}
+.producerplays .playitem{
+  margin-right: 0;
+}
+.description p {
+   
+    padding-bottom: 20px;
+}
 }

@@ -1,0 +1,56 @@
+{
+  "plays": [
+    { 
+      "name":"Цианистый калий с молоком или без",
+      "photoUrl":"assets/img/producer/kaliy.jpg",
+      "playUrl":"https://vk.com/event30943735"
+    },
+    { 
+      "name":"Тринадцатая <br>звезда",
+      "photoUrl":"assets/img/producer/star.jpg",
+       "playUrl":"https://vk.com/event78672697"
+    },
+    { 
+      "name":"Одно непредвиденное обстоятельство",
+      "photoUrl":"assets/img/producer/obstoyatelstvo.jpg",
+      "playUrl":"https://vk.com/event106543610"
+      
+    },
+     { 
+      "name":"Смертельная <br>любовь",
+      "photoUrl":"assets/img/producer/lovedead.jpg",
+      "playUrl":"https://vk.com/event31289737"
+    },
+    { 
+      "name":"Почему люди<br> не...",
+      "photoUrl":"assets/img/producer/humans.jpg",
+      "playUrl":"https://vk.com/event47563256"
+    },
+    { 
+      "name":"Любовь, измена, любовь",
+      "photoUrl":"assets/img/producer/love.jpg",
+      "playUrl":"https://vk.com/club35755911"
+      
+    },
+     { 
+      "name":"Romeo <br>\"F25\"",
+      "photoUrl":"assets/img/producer/romeo.jpg",
+       "playUrl":"https://vk.com/spektakl_shekspir"
+    },
+    { 
+      "name":"Исчезновение принцессы Фефелы III",
+      "photoUrl":"assets/img/producer/fefela.jpg",
+      "playUrl":"https://vk.com/album86937283_112314004"
+    },
+     { 
+      "name":"Кошки - <br>Мышки",
+      "photoUrl":"assets/img/producer/cats.jpg",
+      "playUrl":"https://vk.com/album86937283_112045215"
+    },
+    { 
+      "name":"Настоящая <br>принцесса",
+      "photoUrl":"assets/img/producer/princess.jpg",
+      "playUrl":"https://vk.com/album86937283_129193375"
+    }
+  ]
+}

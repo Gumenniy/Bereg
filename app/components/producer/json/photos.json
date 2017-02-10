@@ -1,9 +1,20 @@
 {
-  "photos": [
+    "photos": [
     {
-      
-      "name":"Андрей Гуменный",
-      "photoUrl":"assets/img/troupe/гуменный.jpg"
+      "type":"horizontal",
+      "photoUrl":"assets/img/producer/volkonskiy/photo1.jpg"
+    },
+    { 
+      "type":"vertical",
+      "photoUrl":"assets/img/producer/volkonskiy/photo2.jpg"
+    },
+    {
+      "type":"horizontal",
+      "photoUrl":"assets/img/producer/volkonskiy/photo3.jpg"
+    },
+    { 
+      "type":"vertical",
+      "photoUrl":"assets/img/producer/volkonskiy/photo4.jpg"
     }
   ]
 }
