@@ -3,7 +3,9 @@
   padding: 0;
   border: 0;
 }
-
+a {
+  outline: none; 
+}
 body {
   font: 300 16px/18px "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode";
   -moz-text-size-adjust: none;
