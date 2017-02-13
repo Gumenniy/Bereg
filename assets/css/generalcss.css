@@ -26,6 +26,7 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  opacity: 0.8;
 }
 .wrap {
   max-width: 1230px;
