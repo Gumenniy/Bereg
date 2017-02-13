@@ -5,6 +5,7 @@
   color: white;
   float: left;
   margin-bottom: 50px;
+  color: rgb(31, 56, 82);
 }
 
 .producer .main-info {
@@ -61,8 +62,8 @@
 
 .producer .main-info .description p {
   font-family: 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 19px;
+  line-height: 21px;
 }
 .producerplays {
     float: left;
